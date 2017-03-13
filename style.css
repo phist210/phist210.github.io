@@ -1,35 +1,99 @@
-body{
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: teal;
+body {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 * {
   -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-    font-family: Helvetica;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: Helvetica;
 }
 
-.container{
-    postion: relative;
+.main {
+  padding: 10px;
+  width: 700px;
+  margin: auto;
 }
 
-.main{
-    color: white;
-    margin-top: 50px;
-    margin-left: 50px;
-    text-align: left;
-    font-weight: lighter;
+.block1{
+  padding: 40px;
+  text-align: left;
+  font-weight: lighter;
+  font-color: white;
 }
 
-footer{
-    text-align: center;
+.block2{
+  padding: 5px;
+  text-align: left;
+  font-weight: lighter;
+  border-style: solid;
+}
+
+.cont{
+  height:auto;
+  max-width: 1200px;
+}
+
+.pic{
+  position:relative;
+  border-radius: 50%;
+  width: 150px;
+  float: left;
+  padding: 10px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
     position: fixed;
-    bottom: 0;
+    z-index: 1;
+    top: 0;
     left: 0;
-    height: 20px;
-    background-color: white;
-    width: 100%;
-    font-size: 15px;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidebar a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#bar {
+    transition: margin-left .5s;
+    padding: 5px;
+    position: absolute;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+footer {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 20px;
+  width: 100%;
+  font-size: 15px;
 }
