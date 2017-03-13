@@ -4,7 +4,8 @@ body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: Helvetica;
+  font-family: "Calibri", Helvetica, sans-serif;
+  background-color: grey;
 }
 
 header{
@@ -30,6 +31,7 @@ header{
   text-align: left;
   font-weight: lighter;
   border-style: solid;
+  border-width: thin;
 }
 
 .cont{
@@ -47,6 +49,31 @@ header{
   width: 150px;
   float: left;
   padding: 10px;
+}
+
+.headline {
+  line-height: 1.5em;
+  color: black;
+  font-size: 20px;
+}
+
+.bottomline {
+  bottom: auto;
+  font-size: 10px;
+  bottom: 0;
+  position: absolute;
+}
+
+h1:after {
+    content:' ';
+    display:block;
+    border:1px solid #d0d0d0;
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+    -webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+    -moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
 }
 
 .sidebar {
