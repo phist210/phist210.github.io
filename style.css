@@ -65,13 +65,6 @@ header{
   font-family: Advent Pro;
 }
 
-.bottomline {
-  bottom: auto;
-  font-size: 10px;
-  bottom: 0;
-  position: absolute;
-}
-
 h1:after {
     content:' ';
     display:block;
@@ -95,6 +88,10 @@ h1:after {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+}
+
+p{
+  text-indent:20px;
 }
 
 .sidebar a {
@@ -131,10 +128,10 @@ h1:after {
 
 footer {
   text-align: center;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   left: 0;
   height: 20px;
   width: 100%;
-  font-size: 15px;
+  font-size: 10px;
 }
