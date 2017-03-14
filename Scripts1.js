@@ -1,9 +1,9 @@
 function openBar() {
-    document.getElementById("sidebar").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
+    document.getElementById("sidebar").style.width = "180px";
+    document.getElementById("bar").style.marginLeft = "180px";
 }
 
 function closeBar() {
     document.getElementById("sidebar").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
+    document.getElementById("bar").style.marginLeft= "0";
 }

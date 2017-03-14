@@ -30,7 +30,10 @@ header{
 }
 
 .block1{
-  padding: 40px;
+  padding-top: 5px;
+  padding-bottom: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
   text-align: left;
   font-weight: lighter;
 }
@@ -77,6 +80,10 @@ h1:after {
     -moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
 }
 
+p{
+  text-indent:20px;
+}
+
 .sidebar {
     height: 100%;
     width: 0;
@@ -90,12 +97,8 @@ h1:after {
     padding-top: 60px;
 }
 
-p{
-  text-indent:20px;
-}
-
 .sidebar a {
-    padding: 8px 8px 8px 90px;
+    padding: 15px 8px 8px 50px;
     text-decoration: none;
     font-size: 25px;
     color: #818181;
