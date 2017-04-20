@@ -1,49 +1,104 @@
 body {
-  max-width: 1200px;
   margin: 0 auto;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  padding: 1em;
   font-family: "Calibri", Helvetica, sans-serif;
+  background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
   background-color: grey;
+  font-weight: lighter;
+  min-height: 1000px;
 }
 
-header{
-  position: absolute;
-  z-index: 1;
+a, a:visited{
+  color: inherit;
+  text-decoration: none;
 }
 
-.cont{
-  top: 50px;
-  height:auto;
-  max-width: 1200px;
-  overflow: hidden;
-  position:relative;
-  z-index: auto;
+.container{
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  height: auto;
+  width: 60%;
+}
+
+.content{
+  width: 40%;
+  position: relative;
+  text-align: center;
+}
+
+div#panel{
+ display: none;
+ padding:10px;
 }
 
 .main {
   padding: 10px;
-  max-width: 650px;
+  min-width: 50%;
   height:auto;
   margin: auto;
-}
-
-.block1{
   padding-top: 5px;
   padding-bottom: 30px;
   padding-right: 30px;
   padding-left: 30px;
   text-align: left;
-  font-weight: lighter;
 }
 
-.block2{
-  padding: 20px;
-  text-align: left;
-  font-weight: lighter;
-  border-style: solid;
-  border-width: thin;
+.list-group {
+  width: 100%;
+  margin-bottom: 20px;
+  padding-left: 0;
+  text-decoration: none;
+  font-family: Advent Pro;
+
+}
+
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: -1px;
+  background-color: #fff;
+  text-decoration: none;
+  border: 1px solid #ddd;
+}
+
+.list-group-item:first-child {
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.list-group-item:last-child {
+    margin-bottom: 0;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+a.list-group-item,button.list-group-item {
+    color: #555;
+}
+
+a.list-group-item .list-group-item-heading,button.list-group-item .list-group-item-heading {
+    color: #333;
+}
+
+a.list-group-item:hover,button.list-group-item:hover,a.list-group-item:focus,button.list-group-item:focus {
+    text-decoration: none;
+    color: #555;
+    background-color: #f5f5f5;
+}
+
+.buttons{
+  position: absolute;
+  display: flex;
+  flex-flow: column;
+  width: auto;
+  padding: 1em;
+  border-top: .1em solid black;
 }
 
 .pic{
@@ -60,81 +115,12 @@ header{
   font-family: Advent Pro;
 }
 
-.headline {
-  line-height: 60px;
-  color: black;
-  font-size: 30px;
-  font-weight: lighter;
-  font-family: Advent Pro;
-}
-
-h1:after {
-    content:' ';
-    display:block;
-    border:1px solid #d0d0d0;
-    border-radius:4px;
-    -webkit-border-radius:4px;
-    -moz-border-radius:4px;
-    box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
-    -webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
-    -moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
-}
-
-p{
-  text-indent:20px;
-}
-
-.sidebar {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidebar a {
-    padding: 15px 8px 8px 55px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.5s;
-}
-
-.sidebar a:hover, .offcanvas a:focus{
-    color: #f1f1f1;
-}
-
-.sidebar .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-#bar {
-    transition: margin-left .5s;
-    padding: 5px;
-    position: absolute;
-}
-
-@media screen and (max-height: 450px) {
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
-}
-
-footer {
+.footer {
   text-align: center;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
-  height: 20px;
+  height: 5%;
   width: 100%;
-  font-size: 10px;
+  font-size: 12px;
 }
