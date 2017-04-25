@@ -9,7 +9,7 @@ body {
   filter: progid:DXImageTransfom.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
   background-color: grey;
   font-weight: lighter;
-  width: 100%;
+  width: 90%;
   min-height: 930px;
 }
 
@@ -26,10 +26,10 @@ a, a:visited{
 .container{
   margin: 0 auto;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column;
   align-items: center;
   height: auto;
-  max-width: 60%;
+  max-width: 70%;
 }
 
 .content{

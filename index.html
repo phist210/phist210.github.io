@@ -4,13 +4,12 @@
     <meta charset="utf-8">
     <meta name="owner" content="Joshua Friese">
     <meta name="author" content="Joshua Friese, josh.friese@gmail.com">
+    <meta name="description" content='Icons thanks to http://fontawesome.io, buttons thanks to Rafael Caferati (http://caferati.me)'>
     <title>Josh Friese - Typist</title>
     <link rel="stylesheet" href='style.css'/>
     <link rel="shortcut icon" type="image/png" href="https://www.iconexperience.com/_img/g_collection_png/standard/16x16/hand_fist.png"/>
     <link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <!-- Webcomponents (cross-browser polyfill) -->
-    <!-- Awesome Button -->
     <link async rel="import" href="https://raw.githubusercontent.com/rcaferati/awesome-button/master/awesome-button.html"/>
 
   </head>
@@ -18,33 +17,33 @@
   <body>
     <!-- start container -->
     <div class='container'>
-
+      <!-- picture and headline -->
       <div class='main'>
-        <a href="javascript:alert('Hello World!');"><img class='pic' title='I went to Santa Cruz, CA, once.' src="http://i.imgur.com/V9RhRkm.jpg"/></a>
+        <a href=""><img class='pic' title='I went to Santa Cruz, CA, once.' src="http://i.imgur.com/V9RhRkm.jpg"/></a>
           <p class='title'>Need development?</p>
         <p style='text-indent: 1em;'>
-          Welcome! My name is <span id='name'>Josh Friese</span>.
-          <p>I am very enthusiastic about problem solving, learning new technologies, headbanging and all things hoppy.</p>
+          Welcome! My name is <span id='name'>Josh Friese</span> and...
+          <p>I am very enthusiastic about problem solving, headbanging and a sunny, open field with my dog, <a href='adidog.jpg'>Atlas. 🐶</a></p>
         </p>
       </div>
-
+      <!-- content menu -->
       <div class='content'>
         <div class="list-group">
-          <a class="list-group-item" id='home' href="#home">
+          <a class="list-group-item" id='home' href="">
             <i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp;
           </a>
-          <a class="list-group-item" id='work' href="#work">
+          <a class="list-group-item" id='work' href="#content">
             <i class="fa fa-book fa-fw" aria-hidden="true"></i>&nbsp; Résumé
             <div id='work' class="panel">
-              <object data="resume.pdf" type="application/pdf" width="500px" height="700px">
+              <object data="resume.pdf" type="application/pdf" width="400px" height="700px">
                   <embed src="resume.pdf">
-                      This browser does not support PDFs. Please download the PDF to view it: <a href="/resume.pdf">Download PDF</a>.</p>
+                      This browser does not support PDFs. Please follow this link to view or download this PDF: <a href="resume.pdf">Download PDF</a>.</p>
                   </embed>
               </object>
             </div>
           </a>
-          <a class="list-group-item" id='connect' href="#connect">
-            <i class="fa fa-pencil fa-fw" aria-hidden="true"></i>&nbsp; Connect
+          <a class="list-group-item" id='connect' href="#content">
+            <i class="fa fa-pencil fa-fw" aria-hidden="true"></i>&nbsp; Contact and connect
             <div id='connect' class="panel">
               <awesome-button type="linkedin" href="https://www.linkedin.com/in/joshua-friese-1aa13990/"></awesome-button>
               <awesome-button type="twitter" href="http://twitter.com/jawshology/"></awesome-button>
@@ -52,21 +51,25 @@
               <awesome-button type="mail" href="mailto:josh.frese@gmail.com"></awesome-button>
             </div>
           </a>
-          <a class="list-group-item" id='other' href="#">
+          <a class="list-group-item" id='other' href="#content">
             <i class="fa fa-cog fa-fw" aria-hidden="true"></i>&nbsp; Other
+            <div id='other' class="panel">
+              *Coming soon*<br>
+            </div>
           </a>
         </div>
       </div>
     </div>
     <!-- end container -->
-      <div class='footer'>
-        <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
-        <a href="https://www.visitnc.com/raleigh-durham-the-triangle">Triangle Area, NC, United States</a>
-      </div>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.6.0/webcomponents.min.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      <script src="https://use.fontawesome.com/568731b0b0.js"></script>
-      <script src="scriptin.js" type="text/javascript"></script>
+    <div class='footer'>
+      <a href="https://www.visitnc.com/raleigh-durham-the-triangle">
+        <i class="fa fa-globe fa-2x" aria-hidden="true"></i></a>
+        Triangle Area, NC, United States
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.6.0/webcomponents.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/568731b0b0.js"></script>
+    <script src="scriptin.js" type="text/javascript"></script>
   </body>
 
 </html>

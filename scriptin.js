@@ -5,3 +5,7 @@ $('a.list-group-item#connect').click(function(){
 $('a.list-group-item#work').click(function(){
     $(".panel#work").slideToggle("fast");
 });
+
+$('a.list-group-item#other').click(function(){
+    $(".panel#other").slideToggle("fast");
+});
