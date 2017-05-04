@@ -133,9 +133,10 @@ a.list-group-item:hover,button.list-group-item:hover,a.list-group-item:focus,but
 .footer {
   text-align: center;
   position: fixed;
+  padding-top: .5em;
   bottom: 0;
   left: 0;
-  height: 5%;
+  height: 4%;
   width: 100vw;
   font-size: .8em;
   background-color: #161616;
