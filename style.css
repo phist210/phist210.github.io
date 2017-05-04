@@ -3,14 +3,20 @@ body {
   padding: 1em;
   font-size: 15px;
   font-family: Helvetica;
-  background: #161616;
-  background-image: url("https://s-media-cache-ak0.pinimg.com/originals/57/6e/18/576e1825ab0a1eb6b47c9a94e8c41534.jpg");
-  background-size: contain;
+  background-color: black;
+  background-image: url("desk_bg1.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
   font-weight: lighter;
   width: 90%;
   height: 100vh;
   color: white;
+}
+
+.logo{
+  width: 25%;
+  z-index: 1;
+  margin-right: 10%;
 }
 
 a, a:visited{
@@ -36,6 +42,7 @@ a, a:visited{
   width: 60%;
   position: relative;
   text-align: center;
+  margin: 1.5em;
 }
 
 .panel{
@@ -45,7 +52,7 @@ a, a:visited{
 }
 
 .main {
-  padding: 10px;
+  padding: 1em;
   max-width: 80%;
   height:auto;
   margin: auto;
@@ -129,6 +136,8 @@ a.list-group-item:hover,button.list-group-item:hover,a.list-group-item:focus,but
   bottom: 0;
   left: 0;
   height: 5%;
-  width: 100%;
-  font-size: 12px;
+  width: 100vw;
+  font-size: .8em;
+  background-color: #161616;
+  opacity: .8;
 }
