@@ -3,14 +3,14 @@ body {
   padding: 1em;
   font-size: 15px;
   font-family: Helvetica;
-  background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
-  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
-  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
-  filter: progid:DXImageTransfom.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
-  background-color: grey;
+  background: #161616;
+  background-image: url("https://s-media-cache-ak0.pinimg.com/originals/57/6e/18/576e1825ab0a1eb6b47c9a94e8c41534.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
   font-weight: lighter;
   width: 90%;
-  min-height: 930px;
+  height: 100vh;
+  color: white;
 }
 
 a, a:visited{
