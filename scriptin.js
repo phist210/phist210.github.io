@@ -9,3 +9,5 @@ $('a.list-group-item#work').click(function(){
 $('a.list-group-item#other').click(function(){
     $(".panel#other").slideToggle("fast");
 });
+
+// $('.resume').css('width', $(window).width()+'px');

@@ -8,15 +8,21 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   font-weight: lighter;
-  width: 90%;
+  width: 100%;
   height: 100vh;
   color: white;
+  white-space: normal;
 }
 
 .logo{
   width: 25%;
   z-index: 1;
   margin-right: 10%;
+}
+
+p.bio{
+  text-indent: .5em;
+  white-space: nowrap;
 }
 
 a, a:visited{
@@ -39,7 +45,7 @@ a, a:visited{
 }
 
 .content{
-  width: 55%;
+  width: 50%;
   position: relative;
   text-align: center;
   margin: 0em 1.5em 3em;
@@ -53,7 +59,7 @@ a, a:visited{
 
 .main {
   padding: 1em;
-  max-width: 80%;
+  max-width: 70%;
   height:auto;
   margin: auto;
   padding-top: 5px;
@@ -76,7 +82,7 @@ a, a:visited{
 .list-group-item {
   position: relative;
   display: block;
-  padding: 10px 15px;
+  padding: 10px 20px;
   margin-bottom: -1px;
   background-color: #fff;
   text-decoration: none;
@@ -140,6 +146,6 @@ a.list-group-item:hover,button.list-group-item:hover,a.list-group-item:focus,but
   height: 4%;
   width: 100vw;
   font-size: .8em;
-  background-color: #161616;
+  background-color: #080808;
   opacity: .8;
 }
