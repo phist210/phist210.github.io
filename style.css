@@ -182,10 +182,14 @@ a.list-group-item:focus,button.list-group-item:focus {
 
 .esc-info {
   width: 10%;
+  text-align: center;
   color: black;
-  background-color: white;
-  right: 0;
+  padding: 1em;
+  background-color: #ccc;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
   top: 0;
+  z-index: 9999;
   position: fixed;
 }
 

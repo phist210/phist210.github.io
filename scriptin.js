@@ -13,8 +13,8 @@ var appendmodal =  ("<div class='modal-overlay'></div>");
 
   $('a[data-modal-id]').click(function(e) {
     e.preventDefault();
-    $("body").append(appendesc);
     $("body").append(appendmodal);
+    $("body").append(appendesc);
     $(".modal-overlay").slideDown().fadeTo(500, 0.9);
     //$(".js-modalbox").fadeIn(500);
     var modalBox = $(this).attr('data-modal-id');
