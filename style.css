@@ -19,13 +19,20 @@ body {
   white-space: normal;
 }
 
+img.pic {
+  margin: 1em;
+  padding: 0;
+  height: 8em;
+  width: 8em;
+}
+
 .logo{
   width: 25%;
   z-index: 1;
   margin-right: 10%;
 }
 
-p.bio{
+p{
   text-indent: .5em;
   white-space: nowrap;
 }
@@ -72,7 +79,6 @@ a.links{
   height:auto;
   margin: auto;
   padding-top: 5px;
-  padding-bottom: 30px;
   padding-right: 30px;
   padding-left: 30px;
   text-align: left;
