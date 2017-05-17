@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Josh Friese - Typist</title>
     <link rel="stylesheet" href='style.css'/>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="shortcut icon" type="image/png" href="jf_logo_green.png"/>
     <link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
@@ -23,10 +24,10 @@
         <a href=""><img class='pic' title='I went to Santa Cruz, CA, once.' src="http://i.imgur.com/V9RhRkm.jpg"/></a>
           <p class='title'>Need&nbsp;development?</p>
         <p class='bio'>
-          I'd be happy to help! My name is <span id='name'>Josh Friese</span> and...
+          I'd be happy to help!</br>My name is <span id='name'>Josh Friese</span> and...
           <p>
             I am very enthusiastic about problem solving, headbanging
-            and a sunny, open field with my dog, <a href='adidog.jpg'>Atlas. 🐶</a>
+            and a sunny, open field with my dog, <a id='atlas' href='adidog.jpg'>Atlas. 🐶</a>
           </p>
         </p>
       </div>
@@ -53,13 +54,54 @@
               <awesome-button type="mail" href="mailto:josh.frese@gmail.com"></awesome-button>
             </div>
           </a>
-          <a class="list-group-item" id='other' href="#content">
+          <a class="list-group-item" id="open-modal" data-modal-id="popup" href="#other">
             <i class="fa fa-cog fa-fw" aria-hidden="true"></i>&nbsp; Other
-            <div id='other' class="panel">
-              *Coming soon*<br>
-            </div>
           </a>
         </div>
+      </div>
+    </div>
+    <div id="popup" class="modal-box">
+      <header id='menu-bar'>
+        <a href="#" class="js-modal-close close">×</a>
+        <div id="about" class="menu-titles">About Me</div>
+        <div id="work" class="menu-titles">Work</div>
+        <div id="blog" class="menu-titles">Blog</div>
+      </header>
+      <div id='about-me' class="modal-body">
+        <h2>About Me</h2>
+        <p>Welcome to my page!</p>
+      </div>
+        <div id="my-work" class="modal-body">
+          <h1>My work</h1>
+          <div id="accordion">
+            <h3>Masterpeace</h3>
+            <div>
+              <p>
+                <a target="_blank" href='https://masterpeace.herokuapp.com'>Masterpeace</a> is a digital art gallery.
+                Created with artists and free expression in mind, we've developed
+                a social network which fosters a collaborative and supportive enivronment.
+              </p>
+              <p><a href='https://github.com/willwile4/masterpeace'>Github</a></p>
+            </div>
+            <h3>Kanban Board</h3>
+            <div>
+              <p>
+                A Trello <a target="_blank" href="https://mysterious-meadow-31968.herokuapp.com/kanban">implementation</a> that allows users to login, create and organize their daily tasks.
+              </p>
+              <p><a href='https://github.com/phist210/kanban-django'>Github</a></p>
+            </div>
+            <h3>Kanban Board</h3>
+            <div>
+              <p>
+                A Trello <a target="_blank" href="https://mysterious-meadow-31968.herokuapp.com/kanban">implementation</a> that allows users to login, create and organize their daily tasks.
+              </p>
+              <p><a href='https://github.com/phist210/kanban-django'>Github</a></p>
+            </div>
+          </div>
+        </div>
+      <div id="my-ideas" class="modal-body">
+        <h2>Blog</h2>
+        <p>Coming soon...</p>
       </div>
     </div>
     <!-- end container -->
@@ -70,6 +112,7 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.6.0/webcomponents.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://use.fontawesome.com/568731b0b0.js"></script>
     <script src="scriptin.js" type="text/javascript"></script>
   </body>
