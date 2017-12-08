@@ -1,0 +1,257 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+* {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url('../images/desk_bg1.jpg') no-repeat center center/cover;
+    color: #eee;
+    font-family: "RobotoDraft", "Roboto", 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    padding: 0;
+    margin: .1rem 0;
+    border-left: 4px solid #4F2CCA;
+    font-weight: 700;
+    padding-left: 8px;
+}
+
+
+/* vvvvvvvvvvvvvvvvvvvvvv  TODO: SASSIFY  vvvvvvvvvvvvvvvvvvvvvvvvvv */
+
+.pic {
+    position: relative;
+    border-radius: 50%;
+    width: 150px;
+    float: left;
+    padding: 30px;
+}
+
+.title {
+    font-size: 40px;
+    text-height: 3px;
+    font-family: Advent Pro;
+}
+
+.footer {
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    padding-top: .5em;
+    bottom: 0;
+    left: 0;
+    height: 4%;
+    width: 100vw;
+    font-size: .8em;
+    z-index: 999;
+    background-color: #080808;
+    opacity: .8;
+}
+
+p {
+    text-indent: .5em;
+    white-space: nowrap;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.content {
+    width: 50%;
+    position: relative;
+    text-align: center;
+    margin: 0em 1.5em 3em 0em;
+}
+
+.panel {
+    display: none;
+    padding: 10px;
+    width: 100%;
+}
+
+.main {
+    padding: 1em;
+    min-width: 30vw;
+    max-width: 50vw;
+    height: auto;
+    margin: auto;
+    margin-bottom: -5em;
+    padding-top: 5px;
+    padding-right: 30px;
+    padding-left: 30px;
+    text-align: left;
+    border-bottom: .1em white solid;
+}
+
+#name {
+    font-family: Montserrat;
+    font-size: 20px;
+}
+
+img.pic {
+    margin: 1em;
+    padding: 0;
+    height: 8em;
+    width: 8em;
+}
+
+.logo {
+    width: 25%;
+    z-index: 1;
+    margin-right: 10%;
+}
+
+
+/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+
+.material-tabs {
+    display: block;
+    float: left;
+    padding: 16px;
+    padding-top: 0;
+    width: 100%;
+    max-width: 480px;
+    left: calc(50% - 480px/2);
+    position: relative;
+    margin: 6em auto;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23) !important;
+    border-radius: 2px;
+}
+
+@media all and (max-width: 480px) {
+    .material-tabs {
+        max-width: 100%;
+        left: 0;
+    }
+}
+
+.visible {
+    position: relative;
+    opacity: 1;
+    width: 100%;
+    height: auto;
+    float: left;
+    transition: opacity .35s ease;
+    z-index: 3;
+}
+
+.hidden {
+    position: absolute;
+    opacity: 0;
+    z-index: 0;
+    transition: opacity 0s ease;
+}
+
+.hidden img {
+    display: none;
+}
+
+[class*="tabbed-section-"] {
+    float: left;
+    color: #000;
+    text-align: center;
+}
+
+[class*="tabbed-section-"] img {
+    display: block;
+    width: 80%;
+    margin: auto 10%;
+}
+
+.tabbed-section__selector {
+    position: relative;
+    height: 32px;
+    top: -31.2px;
+    left: -16px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    float: left;
+}
+
+.tabbed-section__selector [class*="-tab-"] {
+    float: left;
+    display: block;
+    height: 32px;
+    line-height: 32px;
+    width: 100px;
+    text-align: center;
+    background: #fff;
+    font-weight: lighter;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+.tabbed-section__selector [class*="-tab-"].active {
+    color: #4F2CCA;
+}
+
+.tabbed-section__selector a:first-child {
+    border-top-left-radius: 2px;
+}
+
+.tabbed-section__selector a:last-of-type {
+    border-top-right-radius: 2px;
+}
+
+.tabbed-section__highlighter {
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    height: 2px;
+    background: #4F2CCA;
+    max-width: 100px;
+    width: 100%;
+    transform: translateX(0);
+    display: block;
+    left: 0;
+    transition: transform .23s ease;
+}
+
+.tabbed-section__selector-tab-3.active~.tabbed-section__highlighter {
+    transform: translateX(200px);
+}
+
+.tabbed-section__selector-tab-2.active~.tabbed-section__highlighter {
+    transform: translateX(100px);
+    text-align: center;
+}
+
+.tabbed-section__selector-tab-1.active~.tabbed-section__highlighter {
+    transform: translateX(0);
+}
+
+.divider {
+    background: rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: block;
+    float: left;
+    width: 100%;
+    height: 1px;
+    margin: 8px 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+/*# sourceMappingURL=style1.css.map */

@@ -1,29 +1,73 @@
-$('a.list-group-item#connect').click(function () {
-  $(".panel#connect").slideToggle("fast");
-});
 
-$('a.list-group-item#work').click(function () {
-  $(".panel#work").slideToggle("fast");
-});
+// TOGGLE SECTIONS
+// querySelector, jQuery style
+var $ = function (selector) {
+  return document.querySelectorAll(selector);
+};
 
-$(function () {
-  var icons = {
-    header: "ui-icon-circle-arrow-e",
-    activeHeader: "ui-icon-circle-arrow-s"
-  };
-  $("#accordion").accordion({
-    icons: icons,
-    heightStyle: "content"
+
+// Define tabs, write down them classes
+var tabs = [
+  '.tabbed-section__selector-tab-1',
+  '.tabbed-section__selector-tab-2',
+  '.tabbed-section__selector-tab-3'
+];
+
+// Create the toggle function
+var toggleTab = function (element) {
+  var parent = element.parentNode;
+
+  // Do things on click
+  $(element)[0].addEventListener('click', function () {
+    // Remove the active class on all tabs.
+    // climbing up the DOM tree with `parentNode` and target
+    // the children ( the tabs ) with childNodes
+    this.parentNode.childNodes[1].classList.remove('active');
+    this.parentNode.childNodes[3].classList.remove('active');
+    this.parentNode.childNodes[5].classList.remove('active');
+
+    // Then, give `this` (the clicked tab), the active class
+    this.classList.add('active');
+
+    // Check if the clicked tab contains the class of the 1 or 2
+    if (this.classList.contains('tabbed-section__selector-tab-1')) {
+      // and change the classes, show the first content panel
+      $('.tabbed-section-1')[0].classList.remove('hidden');
+      $('.tabbed-section-1')[0].classList.add('visible');
+
+      // Hide the second
+      $('.tabbed-section-2')[0].classList.remove('visible');
+      $('.tabbed-section-2')[0].classList.add('hidden');
+      $('.tabbed-section-3')[0].classList.remove('visible');
+      $('.tabbed-section-3')[0].classList.add('hidden');
+    }
+
+    if (this.classList.contains('tabbed-section__selector-tab-2')) {
+      // and change the classes, show the second content panel
+      $('.tabbed-section-2')[0].classList.remove('hidden');
+      $('.tabbed-section-2')[0].classList.add('visible');
+      // Hide the first
+      $('.tabbed-section-1')[0].classList.remove('visible');
+      $('.tabbed-section-1')[0].classList.add('hidden');
+      $('.tabbed-section-3')[0].classList.remove('visible');
+      $('.tabbed-section-3')[0].classList.add('hidden');
+    }
+
+    if (this.classList.contains('tabbed-section__selector-tab-3')) {
+      // and change the classes, show the second content panel
+      $('.tabbed-section-3')[0].classList.remove('hidden');
+      $('.tabbed-section-3')[0].classList.add('visible');
+      // Hide the first
+      $('.tabbed-section-1')[0].classList.remove('visible');
+      $('.tabbed-section-1')[0].classList.add('hidden');
+      $('.tabbed-section-2')[0].classList.remove('visible');
+      $('.tabbed-section-2')[0].classList.add('hidden');
+    }
   });
-});
+};
 
-$(window).resize(function () {
-  $(".modal-box").css({
-    top: ($(window).height() - $(".modal-box").outerHeight()) / 2,
-    left: ($(window).width() - $(".modal-box").outerWidth()) / 2
-  });
-});
-
-$(window).resize();
-
-});
+// Then finally, iterates through all tabs, to activate the
+// tabs system.
+for (var i = tabs.length - 1; i >= 0; i--) {
+  toggleTab(tabs[i])
+};
