@@ -35,14 +35,6 @@ h4 {
 
 /* vvvvvvvvvvvvvvvvvvvvvv  TODO: SASSIFY  vvvvvvvvvvvvvvvvvvvvvvvvvv */
 
-.pic {
-    position: relative;
-    border-radius: 50%;
-    width: 150px;
-    float: left;
-    padding: 30px;
-}
-
 .title {
     font-size: 40px;
     text-height: 3px;
@@ -65,8 +57,8 @@ h4 {
 }
 
 p {
-    text-indent: .5em;
     white-space: nowrap;
+    margin-left: -5em;
 }
 
 a {
@@ -97,7 +89,7 @@ a {
     padding-top: 5px;
     padding-right: 30px;
     padding-left: 30px;
-    text-align: left;
+    text-align: center;
     border-bottom: .1em white solid;
 }
 
@@ -108,9 +100,13 @@ a {
 
 img.pic {
     margin: 1em;
+    margin-left: 5em;
     padding: 0;
     height: 8em;
     width: 8em;
+    position: relative;
+    border-radius: 50%;
+    float: left;
 }
 
 .logo {
@@ -253,5 +249,74 @@ img.pic {
     overflow: hidden;
 }
 
+a.buttons {
+    float: right;
+    margin: .1em;
+    text-decoration: none;
+    font-family: 'Oswald';
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    width: 60px;
+    text-align: center;
+    vertical-align: middle;
+    height: 54px;
+    cursor: pointer;
+}
 
-/*# sourceMappingURL=style1.css.map */
+a.buttons:active {
+    -webkit-transform: translate(0, 3px);
+    -moz-transform: translate(0, 3px);
+    transform: translate(0, 3px);
+}
+
+a.linkedin {
+    -webkit-box-shadow: 0px 6px 0px darkblue;
+    -moz-box-shadow: 0px 6px 0px darkblue;
+    box-shadow: 0px 6px 0px darkblue;
+    background-color: blue;
+}
+
+a.linkedin:active {
+    -webkit-box-shadow: 0px 2px 0px darkblue;
+    -moz-box-shadow: 0px 2px 0px darkblue;
+    box-shadow: 0px 2px 0px darkblue;
+}
+
+a.twitter {
+    -webkit-box-shadow: 0px 6px 0px #2695BC;
+    -moz-box-shadow: 0px 6px 0px #2695BC;
+    box-shadow: 0px 6px 0px #2695BC;
+    background-color: cyan;
+}
+
+a.twitter:active {
+    -webkit-box-shadow: 0px 2px 0px #2695BC;
+    -moz-box-shadow: 0px 2px 0px #2695BC;
+    box-shadow: 0px 2px 0px #2695BC;
+}
+
+a.github {
+    -webkit-box-shadow: 0px 6px 0px darkgrey;
+    -moz-box-shadow: 0px 6px 0px darkgrey;
+    box-shadow: 0px 6px 0px darkgrey;
+    background-color: lightgrey;
+}
+
+a.github:active {
+    -webkit-box-shadow: 0px 2px 0px darkgrey;
+    -moz-box-shadow: 0px 2px 0px darkgrey;
+    box-shadow: 0px 2px 0px darkgrey;
+}
+
+a.mail {
+    -webkit-box-shadow: 0px 6px 0px darkred;
+    -moz-box-shadow: 0px 6px 0px darkred;
+    box-shadow: 0px 6px 0px darkred;
+}
+
+a.mail:active {
+    -webkit-box-shadow: 0px 2px 0px darkred;
+    -moz-box-shadow: 0px 2px 0px darkred;
+    box-shadow: 0px 2px 0px darkred;
+    background-color: red;
+}
