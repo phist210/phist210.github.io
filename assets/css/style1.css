@@ -313,11 +313,11 @@ a.mail {
     -webkit-box-shadow: 0px 6px 0px darkred;
     -moz-box-shadow: 0px 6px 0px darkred;
     box-shadow: 0px 6px 0px darkred;
+    background-color: red;
 }
 
 a.mail:active {
     -webkit-box-shadow: 0px 2px 0px darkred;
     -moz-box-shadow: 0px 2px 0px darkred;
     box-shadow: 0px 2px 0px darkred;
-    background-color: red;
 }
