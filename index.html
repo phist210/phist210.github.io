@@ -1,115 +1,83 @@
 <!DOCTYPE html>
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="owner" content="Joshua Friese">
-    <meta name="author" content="Joshua Friese, josh.friese@gmail.com">
-    <meta name="description" content='Icons thanks to http://fontawesome.io, buttons thanks to Rafael Caferati (http://caferati.me)'>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
     <title>Josh Friese - Typist</title>
-    <link rel="stylesheet" href='style.css'/>
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="shortcut icon" type="image/png" href="jf_logo_green.png"/>
-    <link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link async rel="import" href="https://raw.githubusercontent.com/rcaferati/awesome-button/master/awesome-button.html"/>
 
-  </head>
+    <meta charset='utf-8'>
+    <meta name='owner' content='Joshua Friese' />
+    <meta name='author' content='Joshua Friese, josh.friese@gmail.com' />
+    <meta name='description' content='Icons thanks to http://fontawesome.io, buttons thanks to Rafael Caferati (http://caferati.me)' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet' />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css' />
+    <link async rel='import' href='https://raw.githubusercontent.com/rcaferati/awesome-button/master/awesome-button.html' />
+    <link rel='stylesheet' href='https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css' />
+    <link rel='stylesheet' href='assets/css/style.css' />
+    <link rel='stylesheet' href='assets/css/fontawesome-pro-solid.css'>
+    <link rel='stylesheet' href='assets/css/fontawesome-pro-core.css'>
+    <link rel='shortcut icon' type='image/png' href='assets/images/jf_logo_green.png' />
 
-  <body>
+</head>
+
+<body>
     <!-- start container -->
     <div class='container'>
-      <!-- picture and headline -->
-      <div class='main'>
-        <a href="">
-          <img class='pic' title='I went to Santa Cruz, CA, once.' src="https://i.imgur.com/V9RhRkm.jpg"/>
-        </a>
-        <p class='title'>Need&nbsp;development?</p>
-        <p class='bio'>
-          I'd be happy to help!</br>My name is <span id='name'>Josh Friese</span> and...
-          <p>
-            I am very enthusiastic about problem solving, headbanging
-            and</br> sunny, open fields with my dog, <a id='atlas' href='adidog.jpg'>Atlas. 🐶</a>
-          </p>
-        </p>
-      </div>
-      <!-- content menu -->
-      <div class='content'>
-        <div class="list-group">
-          <a class="list-group-item" id='work' href="#content">
-            <i class="fa fa-book fa-fw" aria-hidden="true"></i>&nbsp; Résumé
-            <div id='work' class="panel">
-              <object class='resume' data="JoshFrieseResume.pdf" type="application/pdf" width='100%' height='400vmin'>
-                  <embed class='resume' src="JoshFrieseResume.pdf">
-                      This browser does not support PDFs. Please follow this link to view or download this PDF:</br>
-                  </embed>
-                  <a target='_blank' href="JoshFrieseResume.pdf">Open in new tab.</a><p>
-              </object>
-            </div>
-          </a>
-          <a class="list-group-item" id='connect' href="#content">
-            <i class="fa fa-pencil fa-fw" aria-hidden="true"></i>&nbsp; Contact and connect
-            <div id='connect' class="panel">
-              <awesome-button type="linkedin" href="https://www.linkedin.com/in/joshua-friese/"></awesome-button>
-              <awesome-button type="twitter" href="http://twitter.com/jawshology/"></awesome-button>
-              <awesome-button type="github" href="http://github.com/phist210/"></awesome-button>
-              <awesome-button type="mail" href="mailto:josh.frese@gmail.com"></awesome-button>
-            </div>
-          </a>
-          <a class="list-group-item" id="open-modal" data-modal-id="popup" href="#other">
-            <i class="fa fa-cog fa-fw" aria-hidden="true"></i>&nbsp; Other
-          </a>
+        <!-- picture and headline -->
+        <div class='main'>
+            <a href=''>
+                <img class='pic' title='I went to Santa Cruz, CA, once.' src='https://i.imgur.com/V9RhRkm.jpg' />
+            </a>
+            <p class='title'>Need&nbsp;development?</p>
+            <p class='bio'>
+                I'd be happy to help!</br>My name is
+                <span id='name'>Josh Friese</span> and...
+                <p>
+                    I am very enthusiastic about problem solving, headbanging and
+                    </br> sunny, open fields with my dog,
+                    <a id='atlas' href='assets/images/adidog.jpg'>Atlas. 🐶</a>
+                </p>
+            </p>
         </div>
-      </div>
-    </div>
-    <div id="popup" class="modal-box">
-      <header id='menu-bar'>
-        <a href="#" class="js-modal-close close">×</a>
-        <div id="about" class="menu-titles">About Me</div>
-        <div id="work" class="menu-titles">Work</div>
-        <div id="blog" class="menu-titles">Blog</div>
-      </header>
-      <div id='about-me' class="modal-body">
-        <h2>About Me</h2>
-        <p>Welcome to my page!</p>
-      </div>
-        <div id="my-work" class="modal-body">
-          <h1>My work</h1>
-          <div id="accordion">
-            <h3>Masterpeace</h3>
-            <div>
+        <!-- content menu -->
+        <div class='content'>
+            <div class='list-group'>
+                <a class='list-group-item' id='work' href='#content'>
+                    <i class='fa fa-address-card'></i>&nbsp; Résumé
+                    <div id='work' class='panel'>
+                        <object class='resume' data='assets/JoshFrieseResume.pdf' type='application/pdf' width='100%' height='400vmin'>
+              <embed class='resume' src='assets/JoshFrieseResume.pdf'> This browser does not support PDFs. Please follow this link to view or download this PDF:</br>
+              </embed>
+              <a target='_blank' href='assets/JoshFrieseResume.pdf'>Open in new tab.</a>
               <p>
-                <a target="_blank" href='https://masterpeace.herokuapp.com'>Masterpeace</a> is a digital art gallery.
-                Created with artists and free expression in mind, we've developed
-                a social network which fosters a collaborative and supportive enivronment.
-              </p>
-              <p><a href='https://github.com/willwile4/masterpeace'>Github</a></p>
+            </object>
+                    </div>
+                </a>
+                <a class='list-group-item' id='connect' href='#content'>
+                    <i class='fa fa-pencil fa-fw' aria-hidden='true'></i>&nbsp; Contact and connect
+                    <div id='connect' class='panel'>
+                        <awesome-button type='linkedin' href='https://www.linkedin.com/in/joshua-friese/'></awesome-button>
+                        <awesome-button type='twitter' href='http://twitter.com/jawshology/'></awesome-button>
+                        <awesome-button type='github' href='http://github.com/phist210/'></awesome-button>
+                        <awesome-button type='mail' href='mailto:josh.frese@gmail.com'></awesome-button>
+                    </div>
+                </a>
+                <a class='list-group-item' id='open-modal' data-modal-id='popup' href='#other'>
+                    <i class='fa fa-cog fa-fw' aria-hidden='true'></i>&nbsp; Other
+                </a>
             </div>
-            <h3>Kanban Board</h3>
-            <div>
-              <p>
-                A Trello <a target="_blank" href="https://mysterious-meadow-31968.herokuapp.com/kanban">implementation</a> that allows users to login, create and organize their daily tasks.
-              </p>
-              <p><a href='https://github.com/phist210/kanban-django'>Github</a></p>
-            </div>
-          </div>
         </div>
-      <div id="my-ideas" class="modal-body">
-        <h2>Blog</h2>
-        <p>Coming soon...</p>
-      </div>
     </div>
     <!-- end container -->
     <div class='footer'>
-      <a href="https://www.visitnc.com/raleigh-durham-the-triangle">
-        <i class="fa fa-globe fa-2x" aria-hidden="true"></i></a>
+        <a href='https://www.visitnc.com/raleigh-durham-the-triangle'>
+            <i class='fa fa-location-arrow'></i>
+        </a>
         Triangle Area, NC, United States
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.6.0/webcomponents.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="https://use.fontawesome.com/568731b0b0.js"></script>
-    <script src="scriptin.js" type="text/javascript"></script>
-  </body>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.6.0/webcomponents.min.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='https://code.jquery.com/ui/1.12.1/jquery-ui.js'></script>
+    <script src='assets/js/scriptin.js' type='text/javascript'></script>
+</body>
 
 </html>
