@@ -461,6 +461,12 @@ nav a.button-collapse {
     max-height: 500px;
 }
 
-footer.page-footer {
+#social {
+    border-right: 1px solid white;
+    text-align: right;
+}
+
+.footer-copyright {
+    text-align: right;
     margin-top: 0px !important;
 }
