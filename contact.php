@@ -12,6 +12,34 @@
         return str_replace($bad,"",$string);
 
     }
+    function IsInjected($str) {
+        $injections = array('(\n+)',
+            '(\r+)',
+            '(\t+)',
+            '(%0A+)',
+            '(%0D+)',
+            '(%08+)',
+            '(%09+)'
+            );
+
+        $inject = join('|', $injections);
+        $inject = "/$inject/i";
+
+        if(preg_match($inject,$str))
+        {
+        return true;
+        }
+        else
+        {
+        return false;
+        }
+    }
+
+    if(IsInjected($email))
+    {
+        echo "Bad email value!";
+        exit;
+    }
 
     $email_message .= "Name: ".clean_string($name)."\n";
     $email_message .= "Email: ".clean_string($email)."\n";
@@ -19,8 +47,7 @@
 
     // create email headers
     $headers = 'From: '.$email."\r\n".
-    'Reply-To: '.$email."\r\n" .
-    'X-Mailer: PHP/' . phpversion();
+    'Reply-To: '.$email."\r\n";
     mail($email_to, $email_subject, $email_message, $headers);
     echo "Thank You!" . " -" . "<a href='/' style='text-decoration:none;color:#ff0099;'> Return Home</a>";
 ?>
