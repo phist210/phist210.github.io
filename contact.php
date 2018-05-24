@@ -1,8 +1,9 @@
 <?php
+    $recipient="josh.friese@gmail.com";
     $name = $_POST['name'];
     $email = $_POST['email'];
     $message = $_POST['message'];
-    $email_subject = "Contact Form";
+    $subject = "Contact Form";
 
     function IsInjected($str) {
         $injections = array('(\n+)',
@@ -24,18 +25,15 @@
         }
     }
 
-    if(IsInjected($email))
-    {
-        echo "Bad email value!";
-        exit;
-    }
-
-    // create email headers
-    $headers = 'From: '.$name."\r\n".
-    'Reply-To: '.$email."\r\n";
-
     if($_POST["submit"]) {
-        mail($email, $email_subject, $message, $headers);
+
+        if(IsInjected($email))
+        {
+            echo "Bad email value!";
+            exit;
+        } else {
+            mail($recipient, $subject, $message, "From: $name <$email>");
+            $thankYou="<p>Thank you! Your message has been sent.</p>";
+        }
     }
-    echo "Thank You!" . " -" . "<a href='/' style='text-decoration:none;color:#ff0099;'> Return Home</a>";
 ?>
