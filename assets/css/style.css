@@ -133,6 +133,11 @@ h1 {
 
 /* end bubble stuff */
 
+.quote {
+    font-style: italic;
+    font-weight: 700;
+}
+
 nav ul a {
     font-size: 1.2rem;
     color: #FFF;
