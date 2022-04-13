@@ -194,7 +194,7 @@ nav ul a {
     min-height: 632px;
     max-height: 864px;
     position: relative;
-    background-color: #3D9970;
+    background-color: #385569;
     font-weight: 300;
     padding-bottom: 1em;
 }
@@ -288,7 +288,7 @@ nav ul a {
     transform: translateY(-50%);
     height: 90%;
     width: 1px;
-    background-color: #aebcb9;
+    background-color: #385569;
 }
 
 .cd-headline.type .cd-words-wrapper.waiting::after {
@@ -393,7 +393,7 @@ nav ul a {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #fff;
+    background-color: #385569;
     /* change if the mask should have another color then white */
     z-index: 1200;
     /* makes sure it stays on top */
